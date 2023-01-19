@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_minimalist/flutter_minimalist.dart';
 
 /// add Padding Property to widget
-extension MarginPaddingExtention on Widget {
+extension MarginPaddingMinimulist on Widget {
   Widget paddingAll(double padding) {
     return Padding(
       padding: padding.allPadding,
