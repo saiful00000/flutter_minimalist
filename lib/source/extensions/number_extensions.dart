@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-extension NumMinimalist on num {
+extension NumWidgetMinimalist on num {
   /// SizedBox [extensions] on number
   ///
   /// Its easy to use and its reduce some repeated boilerplate code
