@@ -5,7 +5,7 @@ extension StringMinimulist on String{
   double? get toDouble => double.tryParse(this);
   int? get toInt => int.tryParse(this);
 
-  /// Checks if string is an video file.
+  /// Validate if string is an video file.
   static bool isVideo(String filePath) {
     var low = filePath.toLowerCase();
 
@@ -18,7 +18,7 @@ extension StringMinimulist on String{
         low.endsWith(".3gp");
   }
 
-  /// Checks if string is an image file.
+  /// Validate if string is an image file.
   static bool isImage(String filePath) {
     final low = filePath.toLowerCase();
 
@@ -29,7 +29,7 @@ extension StringMinimulist on String{
         low.endsWith(".bmp");
   }
 
-  /// Checks if string is an audio file.
+  /// Validate if string is an audio file.
   static bool isAudio(String filePath) {
     final low = filePath.toLowerCase();
 
@@ -40,44 +40,44 @@ extension StringMinimulist on String{
         low.endsWith(".ogg");
   }
 
-  /// Checks if string is an powerpoint file.
+  /// Validate if string is an powerpoint file.
   static bool isPPT(String filePath) {
     final low = filePath.toLowerCase();
 
     return low.endsWith(".ppt") || low.endsWith(".pptx");
   }
 
-  /// Checks if string is an word file.
+  /// Validate if string is an word file.
   static bool isWord(String filePath) {
     final low = filePath.toLowerCase();
 
     return low.endsWith(".doc") || low.endsWith(".docx");
   }
 
-  /// Checks if string is an excel file.
+  /// Validate if string is an excel file.
   static bool isExcel(String filePath) {
     final low = filePath.toLowerCase();
 
     return low.endsWith(".xls") || low.endsWith(".xlsx");
   }
 
-  /// Checks if string is an apk file.
+  /// Validate if string is an apk file.
   bool get isAPK => toLowerCase().endsWith(".apk");
 
-  /// Checks if string is an pdf file.
+  /// Validate if string is an pdf file.
   bool get isPDF => toLowerCase().endsWith(".pdf");
 
-  /// Checks if string is an txt file.
+  /// Validate if string is an txt file.
   bool get isTxt => toLowerCase().endsWith(".txt");
 
-  /// Checks if string is an chm file.
+  /// Validate if string is an chm file.
   bool get isChm => toLowerCase().endsWith(".chm");
 
-  /// Checks if string is a vector file.
+  /// Validate if string is a vector file.
   bool get isVector => toLowerCase().endsWith(".svg");
 
 
-  /// Checks if string is an html file.
+  /// Validate if string is an html file.
   bool get isHTML => toLowerCase().endsWith(".html");
 
   /// Validate if string is valid URL
@@ -87,7 +87,7 @@ extension StringMinimulist on String{
   /// Note: this validation validate only the syntactically
   bool get isEmailAddress => RegExPatterns.email.hasMatch(this);
 
-  /// Checks if string consist only numeric.
+  /// Validate if string consist only numeric.
   /// Numeric only doesn't accepting "." which double data type have
   bool get isNumericOnly => RegExPatterns.numericOnly.hasMatch(this);
 
