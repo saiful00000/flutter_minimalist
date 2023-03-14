@@ -31,8 +31,8 @@ extension NumWidgetMinimalist on num {
   ///
   /// Usage:
   ///
-  /// 10.[verticalPadding]
-  /// 16.[horizontalPadding]
+  /// 10.verticalPadding
+  /// 16.horizontalPadding
   ///
   /// and so on...
   ///

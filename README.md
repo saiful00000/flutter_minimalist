@@ -11,17 +11,28 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Provide some frequently and commonly used functionalities to maximize Flutter development experience,
+in a minimalistic way.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+* Functionalities as extension.
+* Minimal code.
+* Maximize productivity.
+* More meaningful and readable code structure.
+
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Include dependency in your pubspec.yaml file
+
+```yml
+dependencies:
+  flutter:
+    sdk: flutter
+  # add flutter_address_from_latlng
+  flutter_minimalist: ^(updated version)
+```
 
 ## Usage
 
