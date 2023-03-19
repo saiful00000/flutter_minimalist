@@ -1,22 +1,15 @@
-import 'package:flutter_minimalist/source/extensions/string_extensions.dart';
+import 'package:flutter_minimalist/source/extensions/string_extension.dart';
+import 'package:flutter_minimalist/source/minimals/future_minimalist.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:flutter_minimalist/flutter_minimalist.dart';
 
 void main() {
-  // test('adds one to input values', () {
-  //   final calculator = Calculator();
-  //   expect(calculator.addOne(2), 3);
-  //   expect(calculator.addOne(-7), -6);
-  //   expect(calculator.addOne(0), 1);
-  // });
-
-  test('Capitalize first char of a String', () {
-
-    final result = 'shaiful'.capitalizeFirst();
-
-    print('result => $result');
-
-    expect(result, 'Shaiful');
+  test('Wait testing', () async {
+    print('entering...');
+    print('wait for 5 seconds.');
+    await 5.seconds.wait;
+    print('end of waiting.');
+    print('end of test.');
   });
 }
