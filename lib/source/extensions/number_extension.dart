@@ -70,4 +70,64 @@ extension NumWidgetMinimalist on num {
   EdgeInsetsGeometry get leftMargin => EdgeInsets.only(left: toDouble());
 
   EdgeInsetsGeometry get allMargin => EdgeInsets.all(toDouble());
+
+  /// this getter return a string of million suffixed from [num]
+  String get toMillionDoubleString =>
+      '${(toDouble() / 1000000).toStringAsFixed(1)} M';
+
+  /// this getter return a string of normal number or thousand or million
+  /// suffixed string based on whether the given [num] is bellow thousand
+  /// or a thousand or above or a million or above
+  String get toAutoMillionAndThousandDouble =>
+      _calculateThousandsOrMillions(this);
+
+  /// this getter return a string of thousands suffixed string from [num]
+  String get toThousandDoubleString =>
+      '${(toDouble() / 1000).toStringAsFixed(1)} K';
+
+  String _calculateThousandsOrMillions(num value) {
+    num oneMillion = 1000000;
+    num oneThousands = 1000;
+
+    if (value > oneMillion) {
+      return value.toMillionDoubleString;
+    }
+
+    if (value < oneThousands) {
+      return value.toStringAsFixed(1);
+    }
+
+    return value.toThousandDoubleString;
+  }
+
+  /// this getter return a string of million suffixed string
+  /// from [num] in [int] form
+  String get toMillionStringInt =>
+      '${(toDouble() / 1000000).toStringAsFixed(0)} M';
+
+  /// this getter return a string of normal number or thousand or million
+  /// suffixed string based on whether the given [num] is bellow thousand
+  /// or a thousand or above or a million or above in [int] form
+  String get toAutoMillionAndThousandInt =>
+      _calculateThousandsOrMillionsInt(this);
+
+  /// this getter return a string of thousands suffixed string
+  /// from [num] in [int] form
+  String get toThousandStringInt =>
+      '${(toDouble() / 1000).toStringAsFixed(0)} K';
+
+  String _calculateThousandsOrMillionsInt(num value) {
+    num oneMillion = 1000000;
+    num oneThousands = 1000;
+
+    if (value > oneMillion) {
+      return value.toMillionStringInt;
+    }
+
+    if (value < oneThousands) {
+      return value.toStringAsFixed(0);
+    }
+
+    return value.toThousandStringInt;
+  }
 }

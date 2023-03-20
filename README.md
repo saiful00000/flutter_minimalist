@@ -1,18 +1,5 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-Provide some frequently and commonly used functionalities to maximize Flutter development experience,
-in a minimalistic way.
+Provide some frequently and commonly used functionalities to maximize Flutter development
+experience, in a minimalistic way.
 
 ## Features
 
@@ -21,6 +8,8 @@ in a minimalistic way.
 * Maximize productivity.
 * More meaningful and readable code structure.
 
+
+![](visual_img.png)
 
 ## Getting started
 
@@ -36,15 +25,25 @@ dependencies:
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+final example = 'example';
 ```
 
-## Additional information
+## Contributing
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Contributions are welcome! If you'd like to contribute, please fork the repository
+on [GitHub](https://github.com/saiful00000/flutter_minimalist) and submit a pull request.
+
+## Issues
+
+If you encounter any issues or bugs, please feel free
+to [file an issue](https://github.com/saiful00000/flutter_minimalist/issues) on the github issue
+tracker. We'll do our best to address the issue in a timely manner.
+
+## Support
+
+If you have any questions or need help with the package, contact [saiful161003@gmail.com](saiful161003@gmail.com).
+
+## License
+
+This package is released under the [MIT License](https://github.com/saiful00000/flutter_minimalist/blob/master/LICENSE)
