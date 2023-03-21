@@ -1,5 +1,6 @@
-Provide some frequently and commonly used functionalities to maximize Flutter development
-experience, in a minimalistic way.
+Provide some technique and simplified functionalities to minimize some frequently used Flutter/Dart code to maximize productivity and maintain a readable codebase.
+
+Brings together some basic and frequently used methods for easy to access.
 
 ## Features
 
@@ -25,8 +26,62 @@ dependencies:
 
 ## Usage
 
+For some spacing whether its like margin or padding inside ```Row()``` or ```Column()``` widget just call getters on ```num```
+
 ```dart
-final example = 'example';
+Column(
+  children: [
+    16.verticalSpace, // Equivalent to SizedBox(height: 16)
+    /// Some widgets
+    16.verticalSpace, // // Equivalent to SizedBox(height: 16)
+    Row(
+      children: [
+        16.horizontalSpace, // Equivalent to SizedBox(width: 16)
+        // Some Widgets
+        16.horizontalSpace, // Equivalent to SizedBox(width: 16)
+        // Some widgets
+      ]
+    ),
+  ]
+)
+```
+
+For Margin and padding just call getters on ```num```
+
+```dart
+// for all padding and margin
+Contianer(
+  padding: 16.allPadding,
+  margin: 16.allMargin,
+)
+
+// for left padding and margin
+Contianer(
+  padding: 16.leftPadding,
+  margin: 16.leftMargin,
+)
+```
+
+Simplify ```Duration()``` like
+
+```dart
+void example(){
+  1.seconds; // Equivalent to Duration(seconds: 16)
+  1000.milliSeconds; // Equivalent to Duration(milliseconds: 16)
+  1000000.microSeconds;
+  2.minutes;
+  1.hours;
+}
+```
+
+Ue ```Future.delay()``` more minimalistic way
+
+```dart
+void example() {
+  1000.milliSeconds.delay.then((val){
+    //Do your work after 10 seconds delay
+  });
+}
 ```
 
 ## Contributing
