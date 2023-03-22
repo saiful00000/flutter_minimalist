@@ -3,7 +3,7 @@ description: A flutter utility package with some usefull extensions and commonly
 issue_tracker: https://github.com/saiful00000/flutter_minimalist/issues
 homepage: https://github.com/saiful00000/flutter_minimalist/blob/master/README.md
 
-version: 0.0.1
+version: 0.0.2
 
 environment:
   sdk: '>=2.18.4 <3.0.0'
